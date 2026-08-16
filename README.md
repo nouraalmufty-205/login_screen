@@ -1,16 +1,8 @@
-# login_screen
+#Sign Up Screen
 
-A new Flutter project.
+<img width="359" height="801" alt="Screenshot 2026-08-16 at 18 05 42" src="https://github.com/user-attachments/assets/b7fe7d66-bbea-431f-a74d-2106ab20be49" />
 
-## Getting Started
+#Login Screen
 
-This project is a starting point for a Flutter application.
+<img width="356" height="812" alt="Screenshot 2026-08-16 at 18 26 34" src="https://github.com/user-attachments/assets/5fae43c5-b1ba-4059-87c7-cfec4688f973" />
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
