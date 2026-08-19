@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/screens/login.dart';
 import 'package:login_screen/screens/navbar.dart';
+import 'package:login_screen/screens/shopscreen.dart';
 import 'package:login_screen/screens/signup.dart';
 
 class GroceryApp extends StatelessWidget {
@@ -8,6 +9,6 @@ class GroceryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: SignupScreen());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginScreen());
   }
 }

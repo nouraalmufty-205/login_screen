@@ -33,6 +33,10 @@ class ShopScreen extends StatelessWidget {
                     ),
                     hintText: "Search Store",
                     hintStyle: TextStyle(),
+                    prefixIconConstraints: BoxConstraints(
+                      maxHeight: 43,
+                      maxWidth: 40,
+                    ),
                     prefixIcon: Icon(Icons.search, color: Color(0xff181B19)),
                     filled: true,
                     fillColor: Colors.grey[70],

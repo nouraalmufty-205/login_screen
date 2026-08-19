@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/screens/navbar.dart';
 import 'package:login_screen/widgets/greenbutton.dart';
-import 'package:login_screen/widgets/user_input.dart';
+import 'package:login_screen/widgets/greenbutton.dart';
+import 'package:login_screen/widgets/validator.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -11,21 +12,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final usernameController = TextEditingController();
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
-  bool isEmailValid = false;
-  bool isPasswordHidden = true;
-  bool isPasswordValid = false;
-  @override
-  void dispose() {
-    emailController.dispose();
-    usernameController.dispose();
-    passwordController.dispose();
-    super.dispose();
-  }
-
-  @override
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,59 +30,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
               ),
               SizedBox(height: 10),
-              UserInput(
-                labelText: "Email",
-                controller: emailController,
-                onChanged: (value) {
-                  setState(() {
-                    isEmailValid = value.contains('@');
-                  });
-                },
-                suffixIcon: isEmailValid
-                    ? const Icon(Icons.check, color: Colors.green)
-                    : null,
+              Validator(
+                formKey: _formKey,
+                passwordlabel: 'Password',
+                emaillabel: 'Email',
               ),
-              if (!isEmailValid && emailController.text.isNotEmpty)
-                Padding(
-                  padding: EdgeInsets.only(top: 4, left: 8),
-                  child: Text(
-                    "Invaild Email",
-                    style: TextStyle(fontSize: 12, color: Colors.red),
-                  ),
-                ),
 
-              SizedBox(height: 10),
-              UserInput(
-                labelText: "Password",
-                controller: passwordController,
-                suffixIcon: IconButton(
-                  icon: Icon(
-                    isPasswordHidden ? Icons.visibility_off : Icons.visibility,
-                    color: Colors.black,
-                  ),
-                  onPressed: () {
-                    setState(() {
-                      isPasswordHidden = !isPasswordHidden;
-                    });
-                  },
-                ),
-                obscureText: isPasswordHidden,
-                onChanged: (value) {
-                  setState(() {
-                    isPasswordValid = RegExp(
-                      r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$',
-                    ).hasMatch(value);
-                  });
-                },
-              ),
-              if (!isPasswordValid && passwordController.text.isNotEmpty)
-                Padding(
-                  padding: EdgeInsets.only(top: 4, left: 8),
-                  child: Text(
-                    "Password invalid needs 8+ chars, upper, lower, and a number",
-                    style: TextStyle(fontSize: 12, color: Colors.red),
-                  ),
-                ),
               SizedBox(height: 10),
               Align(
                 alignment: Alignment.centerRight,
@@ -105,25 +45,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               SizedBox(height: 30),
-              greenbutton(
-                title: "Login",
-                onTap: () {
-                  Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const BottomNavBarScreen(),
-                    ),
-                    (route) => false,
-                  );
-                },
-              ),
+              GreenButton(title: "Login"),
               SizedBox(height: 20),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Don' have an account? ",
+                    "Don't have an account? ",
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
 

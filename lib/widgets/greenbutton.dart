@@ -1,34 +1,23 @@
 import 'package:flutter/material.dart';
 
-class greenbutton extends StatefulWidget {
+class GreenButton extends StatelessWidget {
   final String title;
-  final VoidCallback onTap;
-  const greenbutton({super.key, required this.title, required this.onTap});
+  const GreenButton({super.key, required this.title});
 
-  @override
-  State<greenbutton> createState() => _greenbuttonState();
-}
-
-class _greenbuttonState extends State<greenbutton> {
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: widget.onTap,
-      child: Container(
-        padding: EdgeInsets.all(25),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Color(0xff53B175),
+    return SizedBox(
+      height: 70,
+      width: double.infinity,
+      child: ElevatedButton(
+        onPressed: () {},
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Color(0xff53B175),
+          foregroundColor: Color(0xffFFF9FF),
         ),
-        child: Center(
-          child: Text(
-            widget.title,
-            style: TextStyle(
-              color: Color(0xffFFF9FF),
-              fontSize: 15,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
+        child: Text(
+          title,
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
         ),
       ),
     );
