@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/screens/navbar.dart';
 import 'package:login_screen/widgets/greenbutton.dart';
 import 'package:login_screen/widgets/user_input.dart';
 import 'package:login_screen/widgets/terms_policy.dart';
@@ -60,6 +61,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     ? const Icon(Icons.check, color: Colors.green)
                     : null,
               ),
+
               if (!isEmailValid && emailController.text.isNotEmpty)
                 Padding(
                   padding: EdgeInsets.only(top: 4, left: 8),
@@ -105,7 +107,18 @@ class _SignupScreenState extends State<SignupScreen> {
 
               const TermsPrivacy(),
               SizedBox(height: 10),
-              greenbutton(title: "Sign up"),
+              greenbutton(
+                title: "Sign Up",
+                onTap: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const BottomNavBarScreen(),
+                    ),
+                    (route) => false,
+                  );
+                },
+              ),
 
               SizedBox(height: 10),
               Row(
