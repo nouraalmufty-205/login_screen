@@ -8,6 +8,7 @@
 
 #Home Page
 
-<img width="351" height="807" alt="image" src="https://github.com/user-attachments/assets/4703d54e-ab52-4bd0-87f8-c5141ca406a5" />
+<img width="355" height="820" alt="image" src="https://github.com/user-attachments/assets/a5b845e7-0938-4dc2-8de4-af44fef7159e" />
+
 
 
