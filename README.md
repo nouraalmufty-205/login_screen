@@ -1,3 +1,7 @@
+#Splash Screen
+
+<img width="351" height="785" alt="Screenshot 2026-08-23 at 23 29 46" src="https://github.com/user-attachments/assets/354e2a52-0632-4037-af6f-943b823140c7" />
+
 #Sign Up Screen
 
 <img width="359" height="801" alt="Screenshot 2026-08-16 at 18 05 42" src="https://github.com/user-attachments/assets/b7fe7d66-bbea-431f-a74d-2106ab20be49" />
