@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   carousel_slider: ^5.1.2
   smooth_page_indicator: ^2.0.1
+  flutter_native_splash: ^2.4.7
 
 dev_dependencies:
   flutter_test:
@@ -87,3 +88,13 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  color: "#53B175"
+  image: "assets/logo.png"
+  android_12:
+    image: assets/logo_square.png
+    icon_background_color: "#53B175"
+    color: "#53B175"
