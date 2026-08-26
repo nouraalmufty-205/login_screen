@@ -18,5 +18,10 @@
 
 <img width="355" height="820" alt="image" src="https://github.com/user-attachments/assets/a5b845e7-0938-4dc2-8de4-af44fef7159e" />
 
+# Account Screen
+
+<img width="353" height="829" alt="image" src="https://github.com/user-attachments/assets/f091f6e8-71be-4801-91b6-9abf5c9e5d86" />
+
+
 
 
