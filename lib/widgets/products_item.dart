@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/models/productmodel.dart';
 
 class Products extends StatelessWidget {
-  const Products({super.key});
+  ProductModel product;
+  Products({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
@@ -16,23 +18,23 @@ class Products extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Center(child: Image.asset('assets/apple.png')),
+          Expanded(child: Center(child: Image.asset(product.image))),
           SizedBox(height: 33),
           Text(
-            "Red Apple",
+            product.title,
             style: TextStyle(
               fontSize: 18,
               color: Color(0xff181725),
               fontWeight: FontWeight.bold,
             ),
           ),
-          Text("1 Kg, Priceg", style: TextStyle(color: Color(0xff7C7C7C))),
+          Text(product.description, style: TextStyle(color: Color(0xff7C7C7C))),
           SizedBox(height: 30),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "\$4.99",
+                "\$ ${product.price}",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               Container(
