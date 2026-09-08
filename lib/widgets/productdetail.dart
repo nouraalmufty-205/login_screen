@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/cli_commands.dart';
 import 'package:input_quantity/input_quantity.dart';
+import 'package:login_screen/models/productmodel.dart';
 import 'package:login_screen/widgets/greenbutton.dart';
 import 'package:login_screen/widgets/inputquantity.dart';
 import 'package:login_screen/widgets/product_slider.dart';
 import 'package:login_screen/widgets/productoptions.dart';
 
 class ProductDetail extends StatefulWidget {
-  const ProductDetail({super.key});
+  final ProductModel product;
+  const ProductDetail({super.key, required this.product});
 
   @override
   State<ProductDetail> createState() => _ProductDetailState();
@@ -15,7 +17,7 @@ class ProductDetail extends StatefulWidget {
 
 class _ProductDetailState extends State<ProductDetail> {
   int _currentPage = 0;
-  int _quantity = 0;
+  int _quantity = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,7 +78,7 @@ class _ProductDetailState extends State<ProductDetail> {
               ),
             ),
             SizedBox(height: 25),
-            Inputquantity(),
+            Inputquantity(price: widget.product.price),
 
             Divider(color: Color(0xffE2E2E2B2)),
             Padding(

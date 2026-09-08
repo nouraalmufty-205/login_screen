@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/screens/beveragesscreen.dart';
 import 'package:login_screen/widgets/gridbox.dart';
 import 'package:login_screen/widgets/homesearch.dart';
 
@@ -69,8 +70,12 @@ class ExploreScreen extends StatelessWidget {
                   image: Image.asset('assets/drinks.png', fit: BoxFit.contain),
                   title: 'Beverages',
                   color: Colors.cyan.shade100,
+
                   onTap: () {
-                    // Handle tap event
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BeverageScreen()),
+                    );
                   },
                 ),
               ],

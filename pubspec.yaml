@@ -38,6 +38,7 @@ dependencies:
   smooth_page_indicator: ^2.0.1
   flutter_native_splash: ^2.4.7
   input_quantity: ^2.6.0
+  custom_checkbox_plus: ^1.0.0
 
 dev_dependencies:
   flutter_test:

@@ -14,7 +14,7 @@ class BottomNavBarScreen extends StatefulWidget {
 
 class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   int currentIndex = 0;
-  List<Widget> screens = [
+  final List<Widget> screens = [
     ShopScreen(),
     ExploreScreen(),
     CartScreen(),

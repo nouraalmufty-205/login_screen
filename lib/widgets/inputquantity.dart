@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/widgets/greenbutton.dart';
 
 class Inputquantity extends StatefulWidget {
-  const Inputquantity({super.key});
+  final double price;
+  const Inputquantity({super.key, required this.price});
 
   @override
   State<Inputquantity> createState() => _InputquantityState();
 }
 
 class _InputquantityState extends State<Inputquantity> {
-  int _quantity = 0;
+  int _quantity = 1;
   @override
   Widget build(BuildContext context) {
+    double totalPrice = widget.price * _quantity;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Row(
@@ -59,10 +62,12 @@ class _InputquantityState extends State<Inputquantity> {
               ),
             ],
           ),
+
           Text(
-            "\$4.99",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            "\$${totalPrice.toStringAsFixed(2)}",
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
+          GreenButton(title: "Go To Checkout"),
         ],
       ),
     );
