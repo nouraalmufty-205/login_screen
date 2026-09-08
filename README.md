@@ -26,6 +26,20 @@
 
 <img width="362" height="820" alt="image" src="https://github.com/user-attachments/assets/cd22bd62-7195-4947-8e17-258922ccc633" />
 
+#Explore Screen 
+
+<img width="357" height="820" alt="image" src="https://github.com/user-attachments/assets/59e9da5f-f4a1-419a-9605-66fa06443235" />
+
+#Beverages Category
+
+<img width="356" height="811" alt="image" src="https://github.com/user-attachments/assets/3156af29-6440-457b-bba6-dfd23d804177" />
+
+#Filter Screen
+
+<img width="352" height="809" alt="image" src="https://github.com/user-attachments/assets/005ba13e-8d8c-4d9b-93cd-3f135a2659b1" />
+
+
+
 
 
 
