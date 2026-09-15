@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/screens/navbar.dart';
-import 'package:login_screen/screens/shopscreen.dart';
+import 'package:login_screen/screens/home/shopscreen.dart';
 import 'package:login_screen/widgets/greenbutton.dart';
 
 class AcceptedOrder extends StatelessWidget {

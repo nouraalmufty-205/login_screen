@@ -15,14 +15,15 @@ class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "My Cart",
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-        ),
-      ),
       body: Column(
         children: [
+          Center(
+            child: Text(
+              "My Cart",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const SizedBox(height: 32),
           Expanded(
             child: ListView.builder(
               itemCount: items.length,

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:login_screen/account/accountscreen.dart';
 import 'package:login_screen/screens/cartscreen.dart';
 import 'package:login_screen/screens/explorescreen.dart';
-import 'package:login_screen/screens/favoritescreen.dart';
-import 'package:login_screen/screens/shopscreen.dart';
+import 'package:login_screen/screens/favourite/favoritescreen.dart';
+import 'package:login_screen/screens/home/shopscreen.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});
@@ -24,6 +24,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: IndexedStack(index: currentIndex, children: screens),
       ),

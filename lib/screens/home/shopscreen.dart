@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:login_screen/models/productmodel.dart';
-import 'package:login_screen/widgets/home_slider.dart';
-import 'package:login_screen/widgets/homesearch.dart';
+import 'package:login_screen/screens/home/widgets/home_slider.dart';
+import 'package:login_screen/screens/home/widgets/homesearch.dart';
 import 'package:login_screen/widgets/products_item.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

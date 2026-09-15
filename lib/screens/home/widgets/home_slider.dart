@@ -41,7 +41,7 @@ class _HomeSliderState extends State<HomeSlider> {
                     borderRadius: BorderRadius.circular(15),
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: Image.network(i).image,
+                      image: NetworkImage(i),
                     ),
                   ),
                 ),
@@ -53,7 +53,7 @@ class _HomeSliderState extends State<HomeSlider> {
 
           child: AnimatedSmoothIndicator(
             activeIndex: activeIndex,
-            count: 4,
+            count: images.length,
 
             effect: ExpandingDotsEffect(
               activeDotColor: Color(0xff53B175),
