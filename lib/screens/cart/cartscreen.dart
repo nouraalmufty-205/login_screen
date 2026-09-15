@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/models/productmodel.dart';
 import 'package:login_screen/screens/orderaccept.dart';
-import 'package:login_screen/widgets/cartproduct.dart';
+import 'package:login_screen/screens/cart/widget/cartproduct.dart';
 import 'package:login_screen/widgets/greenbutton.dart';
+import 'package:login_screen/screens/cart/widget/showCheckoutSheet.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
@@ -42,12 +43,7 @@ class _CartScreenState extends State<CartScreen> {
           ),
           GreenButton(
             title: "Go To Checkout",
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => AcceptedOrder()),
-              );
-            },
+            onPressed: () => showCheckoutSheet(context),
           ),
           const SizedBox(height: 10),
         ],
