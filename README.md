@@ -46,9 +46,14 @@
 
 <img width="356" height="814" alt="image" src="https://github.com/user-attachments/assets/df8e55e7-053f-4918-88a4-633f3375d3b3" />
 
-#Order Failed Screen
+#Order Failed Dialog
 
 <img width="327" height="689" alt="image" src="https://github.com/user-attachments/assets/b9df5bfa-93a0-49fd-8805-49c2a4de13fc" />
+
+#CheckOut Sheet
+
+<img width="329" height="691" alt="image" src="https://github.com/user-attachments/assets/69ca9eb2-0418-4f87-a0e7-559aac3810e8" />
+
 
 
 
