@@ -46,6 +46,11 @@
 
 <img width="356" height="814" alt="image" src="https://github.com/user-attachments/assets/df8e55e7-053f-4918-88a4-633f3375d3b3" />
 
+#Order Failed Screen
+
+<img width="327" height="689" alt="image" src="https://github.com/user-attachments/assets/b9df5bfa-93a0-49fd-8805-49c2a4de13fc" />
+
+
 
 
 
