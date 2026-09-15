@@ -30,6 +30,10 @@
 
 <img width="357" height="820" alt="image" src="https://github.com/user-attachments/assets/59e9da5f-f4a1-419a-9605-66fa06443235" />
 
+#Favouirte Screen
+
+<img width="338" height="682" alt="image" src="https://github.com/user-attachments/assets/ae5def80-1533-44fa-aa2b-c313f44d25cf" />
+
 #Beverages Category
 
 <img width="356" height="811" alt="image" src="https://github.com/user-attachments/assets/3156af29-6440-457b-bba6-dfd23d804177" />
