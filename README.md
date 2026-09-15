@@ -38,6 +38,11 @@
 
 <img width="352" height="809" alt="image" src="https://github.com/user-attachments/assets/005ba13e-8d8c-4d9b-93cd-3f135a2659b1" />
 
+#Accepted Order Screen
+
+<img width="356" height="814" alt="image" src="https://github.com/user-attachments/assets/df8e55e7-053f-4918-88a4-633f3375d3b3" />
+
+
 
 
 
