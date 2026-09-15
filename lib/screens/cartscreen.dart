@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/models/productmodel.dart';
+import 'package:login_screen/screens/orderaccept.dart';
 import 'package:login_screen/widgets/cartproduct.dart';
+import 'package:login_screen/widgets/greenbutton.dart';
 
-class CartScreen extends StatelessWidget {
+class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
 
+  @override
+  State<CartScreen> createState() => _CartScreenState();
+}
+
+class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,19 +21,35 @@ class CartScreen extends StatelessWidget {
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
       ),
-      body: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          final singleProduct = items[index];
+      body: Column(
+        children: [
+          Expanded(
+            child: ListView.builder(
+              itemCount: items.length,
+              itemBuilder: (context, index) {
+                final singleProduct = items[index];
 
-          return CartProduct(
-            product: singleProduct,
-            image: singleProduct.image,
-            title: singleProduct.title,
-            description: singleProduct.description,
-            price: singleProduct.price,
-          );
-        },
+                return CartProduct(
+                  product: singleProduct,
+                  image: singleProduct.image,
+                  title: singleProduct.title,
+                  description: singleProduct.description,
+                  price: singleProduct.price,
+                );
+              },
+            ),
+          ),
+          GreenButton(
+            title: "Go To Checkout",
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AcceptedOrder()),
+              );
+            },
+          ),
+          const SizedBox(height: 10),
+        ],
       ),
     );
   }

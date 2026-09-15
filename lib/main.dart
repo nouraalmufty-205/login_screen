@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:login_screen/screens/accountscreen.dart';
+import 'package:login_screen/account/accountscreen.dart';
 import 'package:login_screen/screens/navbar.dart';
+import 'package:login_screen/screens/orderaccept.dart';
 import 'package:login_screen/screens/shopscreen.dart';
 import 'package:login_screen/widgets/productdetail.dart';
 
@@ -16,7 +17,7 @@ class GroceryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BottomNavBarScreen(),
+      home: AcceptedOrder(),
     );
   }
 }

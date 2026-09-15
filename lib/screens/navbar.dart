@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_screen/screens/accountscreen.dart';
+import 'package:login_screen/account/accountscreen.dart';
 import 'package:login_screen/screens/cartscreen.dart';
 import 'package:login_screen/screens/explorescreen.dart';
 import 'package:login_screen/screens/favoritescreen.dart';
@@ -24,7 +24,9 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: screens[currentIndex]),
+      body: SafeArea(
+        child: IndexedStack(index: currentIndex, children: screens),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
 

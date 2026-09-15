@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:login_screen/widgets/accountinfo.dart';
-import 'package:login_screen/widgets/accountoption.dart';
+import 'package:login_screen/account/widgets/accountinfo.dart';
+import 'package:login_screen/account/widgets/accountoption.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({super.key});

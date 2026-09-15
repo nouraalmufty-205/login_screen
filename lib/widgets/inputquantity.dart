@@ -67,7 +67,6 @@ class _InputquantityState extends State<Inputquantity> {
             "\$${totalPrice.toStringAsFixed(2)}",
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
-          GreenButton(title: "Go To Checkout"),
         ],
       ),
     );
