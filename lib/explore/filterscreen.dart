@@ -1,6 +1,6 @@
 import 'package:custom_checkbox_plus/custom_checkbox_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:login_screen/widgets/filterstate.dart';
+import 'package:login_screen/explore/widgets/filterstate.dart';
 import 'package:login_screen/widgets/greenbutton.dart';
 
 class FilterScreen extends StatefulWidget {

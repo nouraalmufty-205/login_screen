@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_screen/screens/beveragesscreen.dart';
+import 'package:login_screen/explore/beveragesscreen.dart';
 import 'package:login_screen/widgets/gridbox.dart';
 import 'package:login_screen/screens/home/widgets/homesearch.dart';
 

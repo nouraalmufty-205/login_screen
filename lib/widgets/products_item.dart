@@ -9,7 +9,7 @@ class Products extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 173,
-      // height: 248.51,// it contains a child so it controllet by it self
+
       padding: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 14),
       decoration: BoxDecoration(
         border: Border.all(color: Color(0xffE2E2E2)),
@@ -21,7 +21,7 @@ class Products extends StatelessWidget {
           Expanded(child: Center(child: Image.asset(product.image))),
           SizedBox(height: 33),
           FittedBox(
-            fit: BoxFit.scaleDown, // 👈 Scales down font size if it's too wide
+            fit: BoxFit.scaleDown,
             alignment: Alignment.centerLeft,
             child: Text(
               product.title,

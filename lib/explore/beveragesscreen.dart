@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/models/productmodel.dart';
-import 'package:login_screen/screens/explorescreen.dart';
-import 'package:login_screen/screens/filterscreen.dart';
+import 'package:login_screen/explore/explorescreen.dart';
+import 'package:login_screen/explore/filterscreen.dart';
 import 'package:login_screen/widgets/products_item.dart';
 
 class BeverageScreen extends StatelessWidget {
