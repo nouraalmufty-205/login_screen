@@ -20,12 +20,16 @@ class Products extends StatelessWidget {
         children: [
           Expanded(child: Center(child: Image.asset(product.image))),
           SizedBox(height: 33),
-          Text(
-            product.title,
-            style: TextStyle(
-              fontSize: 18,
-              color: Color(0xff181725),
-              fontWeight: FontWeight.bold,
+          FittedBox(
+            fit: BoxFit.scaleDown, // 👈 Scales down font size if it's too wide
+            alignment: Alignment.centerLeft,
+            child: Text(
+              product.title,
+              style: TextStyle(
+                fontSize: 18,
+                color: Color(0xff181725),
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
           Text(product.description, style: TextStyle(color: Color(0xff7C7C7C))),

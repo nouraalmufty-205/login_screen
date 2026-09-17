@@ -29,7 +29,7 @@ class ExploreScreen extends StatelessWidget {
                 GridBox(
                   image: Image.asset('assets/fruits.png', fit: BoxFit.contain),
                   title: 'Fresh Fruits and Vegetables',
-                  color: Colors.greenAccent,
+                  color: Colors.green.shade100,
                   onTap: () {
                     // Handle tap event
                   },
@@ -37,7 +37,7 @@ class ExploreScreen extends StatelessWidget {
                 GridBox(
                   image: Image.asset('assets/oil.png', fit: BoxFit.contain),
                   title: 'Oil and Ghee',
-                  color: Colors.yellow.shade100,
+                  color: Colors.orange.shade100,
                   onTap: () {
                     // Handle tap event
                   },
